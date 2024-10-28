@@ -1,0 +1,21 @@
+{
+  "name": "razorivi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@ivi/htm": "^3.0.2",
+    "@ivi/vite-plugin": "^3.0.2",
+    "ivi": "^3.0.3",
+    "vite": "^5.4.10"
+  }
+}

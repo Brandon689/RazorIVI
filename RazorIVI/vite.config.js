@@ -1,3 +1,4 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import { ivi } from "@ivi/vite-plugin"
 
@@ -7,11 +8,14 @@ export default defineConfig({
     outDir: 'wwwroot/dist',
     assetsDir: '',
     rollupOptions: {
-      input: 'Scripts/main.js',
+      input: {
+        'counter-island': 'Scripts/islands/counter-island.js',
+        'greeting-island': 'Scripts/islands/greeting-island.js' // Add new island
+      },
       output: {
         entryFileNames: '[name].js',
-        chunkFileNames: '[name].js',
-        assetFileNames: '[name][extname]'
+        chunkFileNames: 'chunks/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash][extname]'
       }
     }
   }

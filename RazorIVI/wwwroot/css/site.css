@@ -1,22 +1,23 @@
-html {
-  font-size: 14px;
+/* wwwroot/css/site.css */
+.user-greeting {
+    padding: 1rem;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+.greeting-text {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #0066cc;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+.counter {
+    padding: 1rem;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-body {
-  margin-bottom: 60px;
+.card-header {
+    background-color: #f8f9fa;
+    font-weight: bold;
 }

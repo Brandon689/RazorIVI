@@ -1,1 +1,1 @@
-import{c,_ as e,a as u,u as a,b as r,m}from"./chunks/islands.X1Ui51Nz.js";const _=u(r('<div class="counter"><p>Count: </p><button>Increment</button></div>'),67,[1024,14],[7,0],[1,1]),i=c(n=>{const[t,o]=a(n,0),s=()=>{o(t()+1)};return()=>e(_,[t(),s])});m(i,"counter-island");
+import{m as c,c as e,_ as u,a,u as r,b as m}from"./chunks/islands.X1Ui51Nz.js";const _=a(m('<div class="counter"><p>Count: </p><button>Increment</button></div>'),67,[1024,14],[7,0],[1,1]),i=e(n=>{const[t,o]=r(n,0),s=()=>{o(t()+1)};return()=>u(_,[t(),s])});c(i,"counter-island");

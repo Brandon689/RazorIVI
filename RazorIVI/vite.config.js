@@ -9,8 +9,8 @@ export default defineConfig({
     assetsDir: '',
     rollupOptions: {
       input: {
-        'counter-island': 'Scripts/islands/counter-island.js',
-        'greeting-island': 'Scripts/islands/greeting-island.js' // Add new island
+        'counter-island': 'Scripts/components/Counter/index.js',
+        'greeting-island': 'Scripts/components/UserGreeting/index.js'
       },
       output: {
         entryFileNames: '[name].js',

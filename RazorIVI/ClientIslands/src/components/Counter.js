@@ -1,7 +1,11 @@
 import { component, useState } from "ivi"
 import { htm } from "@ivi/htm"
+import { mountIsland } from '../islands'
 
 export const Counter = component((c) => {
+
+console.log('Component loaded:', 'Counter/UserGreeting')
+    
     const [count, setCount] = useState(c, 0)
     
     const increment = () => {
@@ -15,3 +19,5 @@ export const Counter = component((c) => {
         </div>
     `
 })
+
+mountIsland(Counter, 'counter-island')

@@ -1,6 +1,6 @@
 import { component, useState } from "ivi"
 import { htm } from "@ivi/htm"
-import { mountIsland } from '../../islands'
+import { mountIsland } from '../islands'
 
 export const UserGreeting = component((c) => {
     const [name, setName] = useState(c, '')

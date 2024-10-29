@@ -1,16 +1,16 @@
-// vite.config.js
 import { defineConfig } from 'vite'
 import { ivi } from "@ivi/vite-plugin"
+import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [ivi()],
   build: {
-    outDir: 'wwwroot/dist',
-    assetsDir: '',
+    outDir: '../wwwroot/dist',
+    emptyOutDir: true,
     rollupOptions: {
       input: {
-        'counter-island': 'Scripts/components/Counter/index.js',
-        'greeting-island': 'Scripts/components/UserGreeting/index.js'
+        'counter-island': resolve(__dirname, 'src/components/Counter.js'),
+        'greeting-island': resolve(__dirname, 'src/components/UserGreeting.js')
       },
       output: {
         entryFileNames: '[name].js',
